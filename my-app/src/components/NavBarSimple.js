@@ -7,35 +7,33 @@ class NavBarSimple extends React.Component {
         super(props);
         this.state = {
             message: "Hello, guest! ",
+            buttonText: "Log in"
         };
     }
 
-    handleClick() {
-        this.setState((prevState, prevProps) => {
-            console.log("Previsous State:", prevState);
-            return {
+    handleClick = () => {
+        this.setState((prevState) => ({
                 message:
-                    this.state.message === "Hello, guest! "
+                    prevState.message === "Hello, guest! "
                         ? "Welcome back, user! "
                         : "Hello, guest! ",
-            };
-
-        })
+                buttonText:
+                    prevState.buttonText === "Log in" ? "Log out" : "Log in",
+        }), () => console.log("Previous State:", this.state.message))
     }
+
     render() {
         return (
             <div className={css.NavBar}>
                 <h1>My Gallery</h1>
-                <span>
-                    {this.state.message}
+                <div>
+                    <span>{this.state.message}</span>
                     <button
                         onClick={() => {
                             this.handleClick();
                         }}
-                    >
-                        log in
-                    </button>
-                </span>
+                    >{this.state.buttonText}</button>
+                </div>
             </div>
         );
     }
