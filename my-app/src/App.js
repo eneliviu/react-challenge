@@ -11,8 +11,9 @@ import css from "./App.module.css";
 
 import NavBarForm from "./components/NavBarForm";
 import Sidebar from "./components/Sidebar";
-import Content from "./components/Content";
-import 
+// import Content from "./components/Content";
+import LifeCyclesCWU from "./components/LifeCyclesCWU";
+
 function App() {
     return (
         <div className={css.App}>
@@ -26,7 +27,7 @@ function App() {
             <NavBarForm />
             <Sidebar />
             {/* <RenderingLists /> */}
-            <Content />
+            <LifeCyclesCWU />
         </div>
     );
 }
