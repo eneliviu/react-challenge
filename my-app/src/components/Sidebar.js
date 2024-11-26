@@ -5,13 +5,13 @@ const Sidebar = () => {
     return (
         <div className={css.sidebar}>
             <a href="#." target="_blank">
-                My Photos
+                App 1{/* My Photos */}
             </a>
             <a href="#." target="_blank">
-                My Illustrations
+                App 2{/* My Illustrations */}
             </a>
             <a href="#." target="_blank">
-                My Paintings
+                App 3 {/*  My Paintings */}
             </a>
         </div>
     );

@@ -23,7 +23,7 @@ export class NavBarForm extends React.Component {
     render() {
         return (
             <div className={css.NavBar}>
-                <h1>My Gallery</h1>
+                <h1>App Gallery</h1>
                 <NavBarChild
                     isLoggedIn={this.state.isLoggedIn}
                     handleClick={this.handleClick}

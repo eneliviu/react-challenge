@@ -9,9 +9,10 @@ import css from "./App.module.css";
 // import ConsitionalRenderingFunctional from "./components/ConsitionalRenderingFunctional";
 // import RenderingLists from "./components/RenderingLists";
 
+
 import NavBarForm from "./components/NavBarForm";
 import Sidebar from "./components/Sidebar";
-// import Content from "./components/Content";
+import Content from "./components/Content";
 import LifeCyclesCWU from "./components/LifeCyclesCWU";
 
 function App() {
@@ -24,10 +25,11 @@ function App() {
           <EventsFunctional /> */}
             {/* <ConditionalrenderingClass />
             <ConsitionalRenderingFunctional connected={true} /> */}
+            {/* <RenderingLists /> */}
             <NavBarForm />
             <Sidebar />
-            {/* <RenderingLists /> */}
             <LifeCyclesCWU />
+            <Content />
         </div>
     );
 }

@@ -26,7 +26,7 @@ export class LifeCyclesCWUTracker extends Component {
     render() {
         return (
             <div>
-                <h1>Tracking Mouse...</h1>
+                <h1>Tracking (X, Y) positions...</h1>
                 <p>
                     X: {this.state.mouseX} Y: {this.state.mouseY}
                 </p>

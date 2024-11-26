@@ -2,10 +2,23 @@ import React from "react";
 import css from "./css/Content.module.css";
 import {savedPosts} from "../posts";
 import PostItem from "./PostItem";
+import Loader from "./Loader";
 
 export class Content extends React.Component {
     constructor(props) {
-        super(props);
+        super(props)
+
+        this.state = {
+            isLoaded: false
+        }
+    }
+
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({
+                isLoaded: true,
+            })
+        }, 5000)
     }
 
     render() {
@@ -16,7 +29,11 @@ export class Content extends React.Component {
                 </div>
 
                 <div className={css.SearchResults}>
-                    <PostItem savedPosts={savedPosts} />
+                    {this.state.isLoaded ? (
+                        <PostItem savedPosts={savedPosts} />
+                    ) : (
+                        <Loader />
+                    )}
                 </div>
             </div>
         );
