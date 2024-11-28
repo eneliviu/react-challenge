@@ -1,8 +1,9 @@
 import React from "react";
 import css from "./css/Content.module.css";
-import { savedPosts } from "../posts.json";
 import PostItem from "./PostItem";
 import Loader from "./Loader";
+import data from "../posts.json";
+const {savedPosts} = data;
 
 export class Content extends React.Component {
     constructor(props) {

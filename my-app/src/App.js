@@ -8,34 +8,30 @@ import css from "./App.module.css";
 // import ConditionalrenderingClass from "./components/ConditionalrenderingClass";
 // import ConsitionalRenderingFunctional from "./components/ConsitionalRenderingFunctional";
 // import RenderingLists from "./components/RenderingLists";
-
+// import LifeCyclesCWU from "./components/LifeCyclesCWU";
+// import ControlledForm from "./components/ControlledForm";
+// import UncontrolledForm from "./components/UncontrolledForm";
+// import SearchBar from "./components/SearchBar";
 
 import NavBarForm from "./components/NavBarForm";
 import Sidebar from "./components/Sidebar";
 import Content from "./components/Content";
-import LifeCyclesCWU from "./components/LifeCyclesCWU";
-// import ControlledForm from "./components/ControlledForm";
-// import UncontrolledForm from "./components/UncontrolledForm";
-import SearchBar from "./components/SearchBar";
+import ControlledFormHooks from "./components/ControlledFormHooks";
+import UseStateWithArrays from "./components/UseStateWithArrays";
+import UseStateWithObjects from "./components/UseStateWithObjects";
+import UseEffectCounter from "./components/UseEffectCounter";
+import UseEffectCounterContainer from "./components/UseEffectCounterContainer";
 
 function App() {
     return (
         <div className={css.App}>
-            {/* Add your components here */}
-            {/* <StatefulGreetingWithCallback /> */}
-            {/* <NavBarSimple /> */}
-            {/* <EventsClass />
-          <EventsFunctional /> */}
-            {/* <ConditionalrenderingClass />
-            <ConsitionalRenderingFunctional connected={true} /> */}
-            {/* <RenderingLists /> */}
-            <NavBarForm />
+            {/* <NavBarForm />
             <Sidebar />
-            <LifeCyclesCWU />
             <Content />
-            {/* <ControlledForm /> */}
-            {/* <UncontrolledForm /> */}
-            {/* <SearchBar /> */}
+            <ControlledFormHooks />
+            <UseStateWithArrays /> */}
+            {/* <UseEffectCounter /> */}
+            <UseEffectCounterContainer />
         </div>
     );
 }
