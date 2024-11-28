@@ -9,7 +9,6 @@ function UseEffectCounter() {
     // run only once: pass an aempty array
     // cleanup function - executed before a component unmounts: pass no array parameter
 
-
     // useEffect runs a function on every render
     useEffect(() => {
         console.log("count 1 effect");
@@ -25,13 +24,15 @@ function UseEffectCounter() {
     useEffect(() => {
         console.log("Creating timer");
         const interval = setInterval(() => {
-            console.log('Interval executed');
+            console.log("Interval executed");
             setTime((time) => time + 1);
         }, 1000);
+        
+        // return the cleanup function
         return () => {
-            console.log('cleaning up')
-            clearInterval(interval)
-        }
+            console.log("cleaning up");
+            clearInterval(interval);
+        };
     }, []);
 
     return (
