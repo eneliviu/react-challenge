@@ -14,6 +14,9 @@ import NavBarForm from "./components/NavBarForm";
 import Sidebar from "./components/Sidebar";
 import Content from "./components/Content";
 import LifeCyclesCWU from "./components/LifeCyclesCWU";
+// import ControlledForm from "./components/ControlledForm";
+// import UncontrolledForm from "./components/UncontrolledForm";
+import SearchBar from "./components/SearchBar";
 
 function App() {
     return (
@@ -30,6 +33,9 @@ function App() {
             <Sidebar />
             <LifeCyclesCWU />
             <Content />
+            {/* <ControlledForm /> */}
+            {/* <UncontrolledForm /> */}
+            {/* <SearchBar /> */}
         </div>
     );
 }
