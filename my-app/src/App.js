@@ -21,24 +21,18 @@ import css from "./App.module.css";
 // import ContentHooks from "./components/ContentHooks";
 // import HTTPRequests from "./components/HTTPRequests";
 // import HTTPPost from "./components/HTTPPost";
+// import HTTPHooks from "./components/HTTPHooks";
 
 import NavBarForm from "./components/NavBarForm";
 import Sidebar from "./components/Sidebar";
-
-import HTTPHooks from "./components/HTTPHooks";
+import ContentAPI from "./components/ContentAPI";
 
 function App() {
     return (
         <div className={css.App}>
-            {/* <UseEffectCounterContainer />
-            <ControlledFormHooks />
-            <Content />
-            <UseStateWithArrays /> */}
-            {/* <UseEffectCounter /> */}
             <NavBarForm />
             <Sidebar />
-            {/* <ContentHooks /> */}
-            <HTTPHooks />
+            <ContentAPI />
         </div>
     );
 }
