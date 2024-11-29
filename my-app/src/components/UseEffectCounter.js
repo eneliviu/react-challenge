@@ -27,7 +27,7 @@ function UseEffectCounter() {
             console.log("Interval executed");
             setTime((time) => time + 1);
         }, 1000);
-        
+
         // return the cleanup function
         return () => {
             console.log("cleaning up");

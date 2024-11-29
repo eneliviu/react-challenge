@@ -12,26 +12,29 @@ import css from "./App.module.css";
 // import ControlledForm from "./components/ControlledForm";
 // import UncontrolledForm from "./components/UncontrolledForm";
 // import SearchBar from "./components/SearchBar";
+// import ControlledFormHooks from "./components/ControlledFormHooks";
+// import UseStateWithArrays from "./components/UseStateWithArrays";
+// import UseStateWithObjects from "./components/UseStateWithObjects";
+// import UseEffectCounter from "./components/UseEffectCounter";
+// import UseEffectCounterContainer from "./components/UseEffectCounterContainer";
+// import Content from "./components/Content";
+
 
 import NavBarForm from "./components/NavBarForm";
 import Sidebar from "./components/Sidebar";
-import Content from "./components/Content";
-import ControlledFormHooks from "./components/ControlledFormHooks";
-import UseStateWithArrays from "./components/UseStateWithArrays";
-import UseStateWithObjects from "./components/UseStateWithObjects";
-import UseEffectCounter from "./components/UseEffectCounter";
-import UseEffectCounterContainer from "./components/UseEffectCounterContainer";
+import ContentHooks from "./components/ContentHooks";
 
 function App() {
     return (
         <div className={css.App}>
-            {/* <NavBarForm />
-            <Sidebar />
-            <Content />
+            {/* <UseEffectCounterContainer />
             <ControlledFormHooks />
+            <Content />
             <UseStateWithArrays /> */}
             {/* <UseEffectCounter /> */}
-            <UseEffectCounterContainer />
+            <NavBarForm />
+            <Sidebar />
+            <ContentHooks />
         </div>
     );
 }
