@@ -6,7 +6,7 @@ function UseEffectCounter() {
 
     // run on every render: pass no array parameter
     // run conditionally: pass an array with appropriate props or state
-    // run only once: pass an aempty array
+    // run only once: pass an empty array
     // cleanup function - executed before a component unmounts: pass no array parameter
 
     // useEffect runs a function on every render

@@ -18,11 +18,14 @@ import css from "./App.module.css";
 // import UseEffectCounter from "./components/UseEffectCounter";
 // import UseEffectCounterContainer from "./components/UseEffectCounterContainer";
 // import Content from "./components/Content";
-
+// import ContentHooks from "./components/ContentHooks";
+// import HTTPRequests from "./components/HTTPRequests";
+// import HTTPPost from "./components/HTTPPost";
 
 import NavBarForm from "./components/NavBarForm";
 import Sidebar from "./components/Sidebar";
-import ContentHooks from "./components/ContentHooks";
+
+import HTTPHooks from "./components/HTTPHooks";
 
 function App() {
     return (
@@ -34,7 +37,8 @@ function App() {
             {/* <UseEffectCounter /> */}
             <NavBarForm />
             <Sidebar />
-            <ContentHooks />
+            {/* <ContentHooks /> */}
+            <HTTPHooks />
         </div>
     );
 }
