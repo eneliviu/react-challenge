@@ -10,6 +10,7 @@ function ContentAPIHooks() {
     const [posts, setPosts] = useState([]);
     const [savedPosts, setSavedPosts] = useState([]);
 
+    // Replace componentDidMount()
     useEffect(() => {
         fetchImages();
     }, []);
@@ -23,7 +24,7 @@ function ContentAPIHooks() {
         setIsLoaded(true);
         setPosts(fetchedPosts);
         setSavedPosts(fetchedPosts);
-    }
+    };
 
     const handleChange = (e) => {
         const name = e.target.value.toLowerCase();
@@ -31,7 +32,6 @@ function ContentAPIHooks() {
             return post.user.toLowerCase().includes(name);
         });
         setPosts(filteredPosts);
-
     };
 
     return (
@@ -51,11 +51,7 @@ function ContentAPIHooks() {
             </div>
 
             <div className={css.SearchResults}>
-                {isLoaded ? (
-                    <PostItemAPI savedPosts={posts} />
-                ) : (
-                    <Loader />
-                )}
+                {isLoaded ? <PostItemAPI savedPosts={posts} /> : <Loader />}
             </div>
         </div>
     );
